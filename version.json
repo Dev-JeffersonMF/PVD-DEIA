@@ -1,19 +1,40 @@
 {
-  "versao": "1.0.3",
+  "versao": "1.0.4",
   "data_publicacao": "2026-07-27",
   "url_instalador": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe",
-  "url_versao_fixa": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe",
-  "notas": "Aba Caixa completa (Abrir/Fechar Caixa + Relatorio PDF ReportLab). Buscar produtos por codigo OU nome. Cofre de APIs AES-128. Hardening (closeEvent limpo + rotacao backup). Animaes ffluidas 3D. Suporte a Notas Fiscais via IA (Gemini Flash + Tesseract).",
+  "url_versao_fixa": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.4/DeiaPDV_Setup_v1.0.4.exe",
+  "notas": "Sincronizadas melhorias do branch PDV-DEIA (layout dashboard compacto, correcao UAC, correcao FBWorker, autenticacao anonima, suporte a caixa/turno, fallback local Firestore). Adicionados plotly e pandas como dependencias obrigatorias. Nova aba Suporte.",
   "obrigatoria": false,
-  "tamanho_estimado_mb": 78,
+  "tamanho_estimado_mb": 82,
   "compatibilidade": "Windows 10/11 x64",
   "releases_historico": [
     {
-      "versao": "1.0.3",
+      "versao": "1.0.4",
       "status": "atual",
+      "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.4/DeiaPDV_Setup_v1.0.4.exe",
+      "data": "2026-07-27",
+      "notas": "Sincronizacao PDV-DEIA + plotly/pandas + suporte"
+    },
+    {
+      "versao": "1.0.3",
+      "status": "descontinuada",
       "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe",
+      "data": "2026-07-27",
+      "notas": "Layout Dashboard compacto + correcao UAC + correcao FBWorker"
+    },
+    {
+      "versao": "1.0.2",
+      "status": "descontinuada",
+      "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.2/DeiaPDV_Setup_v1.0.2.exe",
       "data": "2026-07-26",
-      "notas": "Aba Caixa + Relatorio PDF + Cofre + IA NF + Animaes 3D"
+      "notas": "Aba Caixa + Relatorio PDF + Cofre + IA NF + Animacoes 3D"
+    },
+    {
+      "versao": "1.0.1",
+      "status": "descontinuada",
+      "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.1/DeiaPDV_Setup_v1.0.1.exe",
+      "data": "2026-01-15",
+      "notas": "Mantida apenas para referencia/comparacao. NAO e mais recomendada."
     }
   ]
 }

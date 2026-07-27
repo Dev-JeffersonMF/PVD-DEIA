@@ -7,26 +7,27 @@ Repositório oficial de releases do **Deia PDV** (Ponto de Venda para Deia Prese
 
 ---
 
-## 📦 Versão Atual: **1.0.3** (2026-07-27)
+## 📦 Versão Atual: **1.0.4** (2026-07-27)
 
 | Item | Detalhe |
 |------|---------|
 | **Instalador (nome fixo OTA)** | [`DeiaPDV_Setup.exe`](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe) |
-| **Instalador (versão fixa)** | [`DeiaPDV_Setup_v1.0.3.exe`](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe) |
+| **Instalador (versão fixa)** | [`DeiaPDV_Setup_v1.0.4.exe`](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.4/DeiaPDV_Setup_v1.0.4.exe) |
 | **Manifesto de versão** | [`version.json`](https://raw.githubusercontent.com/Dev-JeffersonMF/PVD-DEIA/main/version.json) |
-| **Tamanho** | ~78 MB |
+| **Tamanho** | ~82 MB |
 | **Compatibilidade** | Windows 10/11 x64 |
 | **Obrigatória** | Não |
 
-### 🆕 Novidades v1.0.3
-- **Aba Caixa completa**: Botões "🟢 Abrir Caixa" / "🔴 Fechar Caixa" + diálogo "Sair" com confirmação
-- **Relatório PDF profissional** (ReportLab) do fechamento de caixa com totais por forma de pagamento
-- **Busca inteligente no PDV**: Pesquisa por **código OU nome** com pontuação (exato → começa com → contém)
-- **Cofre de APIs criptografado** (AES-128 PBKDF2 200k iterações) — OpenRouter, NVIDIA NIM, DeepSeek, GitHub
-- **Suporte a Notas Fiscais via IA**: Upload de imagem/PDF → OCR (Gemini Flash + Tesseract local) → parse automático
-- **Animações fluidas 3D**: Sidebar slide, transições de páginas, hover 3D nos botões
-- **Hardening**: `closeEvent` limpo (para timers, threads, Flask), rotação de `BACKUP_PENDENTE`, senha do certificado digital no cofre
-- **Clientes/Crediário novos**: Máscara CPF/CNPJ progressiva, validação ao vivo, parcelas editáveis, WhatsApp automático
+### 🆕 Novidades v1.0.4
+- **Sincronização completa com PDV-DEIA**: Layout dashboard compacto (2 fileiras de cards, sem sobreposição)
+- **Correção UAC**: Se usuário cancelar permissão de admin, sistema continua funcionando sem privilégios
+- **Correção FBWorker**: Sinal 'done' renomeado para 'resultado' — elimina warnings de desconexão
+- **Autenticação anônima**: Login automático sem tela de login (Firebase anonymous auth)
+- **Sistema de Caixa/Turno**: Abrir/fechar caixa, registro de vendas no turno, relatório PDF
+- **Fallback local Firestore**: Banco local JSON quando Firebase está offline (403/401)
+- **Aba Suporte**: WhatsApp direto e informações de contato
+- **Plotly e Pandas**: Adicionados como dependências obrigatórias para gráficos do dashboard
+- **Interface mais compacta**: Margens reduzidas, sidebar 180px, botões 26px
 
 ---
 
@@ -35,8 +36,8 @@ Repositório oficial de releases do **Deia PDV** (Ponto de Venda para Deia Prese
 ### Para usuários (instalação manual)
 | Arquivo | Link |
 |---------|------|
-| Instalador v1.0.3 (fixo) | [DeiaPDV_Setup.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe) |
-| Instalador v1.0.3 (versão fixa) | [DeiaPDV_Setup_v1.0.3.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe) |
+| Instalador v1.0.4 (fixo) | [DeiaPDV_Setup.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe) |
+| Instalador v1.0.4 (versão fixa) | [DeiaPDV_Setup_v1.0.4.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.4/DeiaPDV_Setup_v1.0.4.exe) |
 
 ### Para automação / OTA (atualização automática do app)
 O próprio aplicativo consulta:
@@ -51,23 +52,14 @@ Se houver versão mais nova, baixa `DeiaPDV_Setup.exe`, instala silenciosamente 
 
 ```json
 {
-  "versao": "1.0.3",
+  "versao": "1.0.4",
   "data_publicacao": "2026-07-27",
   "url_instalador": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe",
-  "url_versao_fixa": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe",
-  "notas": "Aba Caixa completa (Abrir/Fechar Caixa + Relatorio PDF ReportLab). Buscar produtos por codigo OU nome. Cofre de APIs AES-128. Suporte a Notas Fiscais via IA (Gemini Flash + Tesseract). Animacoes fluidas 3D. Hardening (closeEvent limpo + rotacao backup). Clientes/Crediario novos.",
+  "url_versao_fixa": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.4/DeiaPDV_Setup_v1.0.4.exe",
+  "notas": "Sincronizadas melhorias do branch PDV-DEIA (layout dashboard compacto, correcao UAC, correcao FBWorker, autenticacao anonima, suporte a caixa/turno, fallback local Firestore). Adicionados plotly e pandas como dependencias obrigatorias. Nova aba Suporte.",
   "obrigatoria": false,
-  "tamanho_estimado_mb": 78,
-  "compatibilidade": "Windows 10/11 x64",
-  "releases_historico": [
-    {
-      "versao": "1.0.3",
-      "status": "atual",
-      "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe",
-      "data": "2026-07-27",
-      "notas": "Aba Caixa + Relatorio PDF + Cofre + IA NF + Animacoes 3D"
-    }
-  ]
+  "tamanho_estimado_mb": 82,
+  "compatibilidade": "Windows 10/11 x64"
 }
 ```
 
@@ -82,7 +74,7 @@ Se houver versão mais nova, baixa `DeiaPDV_Setup.exe`, instala silenciosamente 
 python painel_dev.py
 
 # 2. Preencha:
-#    - Nova versão: ex: 1.0.3
+#    - Nova versão: ex: 1.0.5
 #    - Novidades: (markdown livre)
 #    - ☐ Atualização obrigatória
 
@@ -93,9 +85,9 @@ python painel_dev.py
 #    ✅ Compila com PyInstaller (--clean --noconfirm)
 #    ✅ Gera instalador com Inno Setup 6
 #    ✅ Renomeia para DeiaPDV_Setup.exe (nome fixo OTA)
-#    ✅ Atualiza version.json (repos de código + releases)
+#    ✅ Atualiza version.json
 #    ✅ Commit + push no repo privado
-#    ✅ Cria Release no repo público (deia-pdv-releases) com o .exe
+#    ✅ Cria Release no repo público (PVD-DEIA) com o .exe
 #    ✅ Push do version.json no repo público
 ```
 
