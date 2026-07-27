@@ -61,7 +61,7 @@ Se houver versão mais nova, baixa `DeiaPDV_Setup.exe`, instala silenciosamente 
   "compatibilidade": "Windows 10/11 x64",
   "releases_historico": [
     {
-      "versao": "1.0.2",
+      "versao": "1.0.3",
       "status": "atual",
       "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.2/DeiaPDV_Setup_v1.0.3.exe",
       "data": "2026-07-27",
