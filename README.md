@@ -18,7 +18,7 @@ Repositório oficial de releases do **Deia PDV** (Ponto de Venda para Deia Prese
 | **Compatibilidade** | Windows 10/11 x64 |
 | **Obrigatória** | Não |
 
-### 🆕 Novidades v1.0.2
+### 🆕 Novidades v1.0.3
 - **Aba Caixa completa**: Botões "🟢 Abrir Caixa" / "🔴 Fechar Caixa" + diálogo "Sair" com confirmação
 - **Relatório PDF profissional** (ReportLab) do fechamento de caixa com totais por forma de pagamento
 - **Busca inteligente no PDV**: Pesquisa por **código OU nome** com pontuação (exato → começa com → contém)
@@ -36,7 +36,7 @@ Repositório oficial de releases do **Deia PDV** (Ponto de Venda para Deia Prese
 | Arquivo | Link |
 |---------|------|
 | Instalador v1.0.3 (fixo) | [DeiaPDV_Setup.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe) |
-| Instalador v1.0.3 (versão fixa) | [DeiaPDV_Setup_v1.0.3.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.2/DeiaPDV_Setup_v1.0.3.exe) |
+| Instalador v1.0.3 (versão fixa) | [DeiaPDV_Setup_v1.0.3.exe](https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe) |
 
 ### Para automação / OTA (atualização automática do app)
 O próprio aplicativo consulta:
@@ -54,7 +54,7 @@ Se houver versão mais nova, baixa `DeiaPDV_Setup.exe`, instala silenciosamente 
   "versao": "1.0.3",
   "data_publicacao": "2026-07-27",
   "url_instalador": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/latest/download/DeiaPDV_Setup.exe",
-  "url_versao_fixa": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.2.exe",
+  "url_versao_fixa": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe",
   "notas": "Aba Caixa completa (Abrir/Fechar Caixa + Relatorio PDF ReportLab). Buscar produtos por codigo OU nome. Cofre de APIs AES-128. Suporte a Notas Fiscais via IA (Gemini Flash + Tesseract). Animacoes fluidas 3D. Hardening (closeEvent limpo + rotacao backup). Clientes/Crediario novos.",
   "obrigatoria": false,
   "tamanho_estimado_mb": 78,
@@ -63,7 +63,7 @@ Se houver versão mais nova, baixa `DeiaPDV_Setup.exe`, instala silenciosamente 
     {
       "versao": "1.0.3",
       "status": "atual",
-      "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.2/DeiaPDV_Setup_v1.0.3.exe",
+      "url": "https://github.com/Dev-JeffersonMF/PVD-DEIA/releases/download/v1.0.3/DeiaPDV_Setup_v1.0.3.exe",
       "data": "2026-07-27",
       "notas": "Aba Caixa + Relatorio PDF + Cofre + IA NF + Animacoes 3D"
     }
